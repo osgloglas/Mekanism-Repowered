@@ -20,6 +20,8 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, MekanismRepowered.MOD_ID);
 
     //actual block creation
+
+    //transformer components
     public static final RegistryObject<Block> TRANSFORMER_CASING = registerBlock("transformer_casing", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
@@ -27,6 +29,26 @@ public class ModBlocks {
         () -> new TransformerInterface(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> TRANSFORMER_IO = registerBlock("transformer_io", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    //voltage rods
+    public static final RegistryObject<Block> BASIC_VOLTAGE_RODS = registerBlock("basic_voltage_rods", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ADVANCED_VOLTAGE_RODS = registerBlock("advanced_voltage_rods", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ELITE_VOLTAGE_RODS = registerBlock("elite_voltage_rods", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ULTIMATE_VOLTAGE_RODS = registerBlock("ultimate_voltage_rods", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> EXTREME_VOLTAGE_RODS = registerBlock("extreme_voltage_rods", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    //space miner (will need custom class)
+    public static final RegistryObject<Block> SPACE_MINER = registerBlock("space_miner", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

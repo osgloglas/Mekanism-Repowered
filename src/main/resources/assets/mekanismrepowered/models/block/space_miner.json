@@ -1,0 +1,13 @@
+{
+  "parent": "mekanismrepowered:custom/space_miner",
+  "textures": {
+    "all": "mekanismrepowered:block/space_miner_legs",
+    "particle": "mekanismrepowered:block/space_miner_legs",
+    "0": "mekanismrepowered:block/body",
+    "1": "mekanismrepowered:block/space_miner_attachments",
+    "2": "mekanismrepowered:block/space_miner_laser_turret",
+    "3": "mekanismrepowered:block/space_miner_legs",
+    "4": "mekanismrepowered:block/space_miner_attach2"
+  },
+  "render_type": "solid"
+}

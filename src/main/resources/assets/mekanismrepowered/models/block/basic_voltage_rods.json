@@ -1,0 +1,10 @@
+{
+  "parent": "mekanismrepowered:custom/basicvoltagerods",
+  "textures": {
+    "all": "mekanismrepowered:block/basic_voltage_rods",
+    "particle": "mekanismrepowered:block/basic_voltage_rods",
+    "1": "mekanismrepowered:block/basic_voltage_rods",
+    "missing": "mekanismrepowered:block/"
+  },
+  "render_type": "solid"
+}

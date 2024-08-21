@@ -28,6 +28,12 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModBlocks.TRANSFORMER_CASING.get());
             pOutput.accept(ModBlocks.TRANSFORMER_INTERFACE.get());
             pOutput.accept(ModBlocks.TRANSFORMER_IO.get());
+            pOutput.accept(ModBlocks.BASIC_VOLTAGE_RODS.get());
+            pOutput.accept(ModBlocks.ADVANCED_VOLTAGE_RODS.get());
+            pOutput.accept(ModBlocks.ELITE_VOLTAGE_RODS.get());
+            pOutput.accept(ModBlocks.ULTIMATE_VOLTAGE_RODS.get());
+            pOutput.accept(ModBlocks.EXTREME_VOLTAGE_RODS.get());
+            pOutput.accept(ModBlocks.SPACE_MINER.get());
         })
         .build());
 

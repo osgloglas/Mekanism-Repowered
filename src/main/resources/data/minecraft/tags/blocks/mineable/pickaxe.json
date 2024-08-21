@@ -2,6 +2,12 @@
     "values": [
         "mekanismrepowered:transformer_casing",
         "mekanismrepowered:transformer_interface",
-        "mekanismrepowered:transformer_io"
+        "mekanismrepowered:transformer_io",
+        "mekanismrepowered:basic_voltage_rods",
+        "mekanismrepowered:advanced_voltage_rods",
+        "mekanismrepowered:elite_voltage_rods",
+        "mekanismrepowered:ultimate_voltage_rods",
+        "mekanismrepowered:extreme_voltage_rods",
+        "mekanismrepowered:space_miner"
     ]
 }

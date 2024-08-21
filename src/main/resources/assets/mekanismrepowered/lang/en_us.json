@@ -8,6 +8,12 @@
     "block.mekanismrepowered.transformer_casing": "Transformer Casing",
     "block.mekanismrepowered.transformer_interface": "Transformer Interface",
     "block.mekanismrepowered.transformer_io": "Transformer I/O",
+    "block.mekanismrepowered.basic_voltage_rods": "Basic Voltage Rods",
+    "block.mekanismrepowered.advanced_voltage_rods": "Advanced Voltage Rods",
+    "block.mekanismrepowered.elite_voltage_rods": "Elite Voltage Rods",
+    "block.mekanismrepowered.ultimate_voltage_rods": "Ultimate Voltage Rods",
+    "block.mekanismrepowered.extreme_voltage_rods": "Extreme Voltage Rods",
+    "block.mekanismrepowered.space_miner": "Space Miner",
 
     "creativetab.mekanismrepowered_tab": "Mekanism: Repowered"
 }
