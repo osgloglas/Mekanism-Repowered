@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "north": "mekanismrepowered:block/transformer_interface",
+        "west": "mekanismrepowered:block/transformer_interface",
         "all": "mekanismrepowered:block/transformer_casing"
     }
 }

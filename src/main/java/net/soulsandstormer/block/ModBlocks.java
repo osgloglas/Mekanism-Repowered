@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.block.custom.TransformerInterface;
 import net.soulsandstormer.mekanismrepowered.MekanismRepowered;
 
 public class ModBlocks {
@@ -23,7 +24,7 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> TRANSFORMER_INTERFACE = registerBlock("transformer_interface", 
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        () -> new TransformerInterface(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> TRANSFORMER_IO = registerBlock("transformer_io", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
