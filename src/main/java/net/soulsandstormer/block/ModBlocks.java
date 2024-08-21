@@ -2,7 +2,6 @@ package net.soulsandstormer.block;
 
 import com.google.common.base.Supplier;
 
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
