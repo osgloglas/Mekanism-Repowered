@@ -1,0 +1,13 @@
+{
+    "item.mekanismrepowered.lv_coil": "LV Coil",
+    "item.mekanismrepowered.mv_coil": "MV Coil",
+    "item.mekanismrepowered.hv_coil": "HV Coil",
+    "item.mekanismrepowered.vhv_coil": "VHV Coil",
+    "item.mekanismrepowered.ev_coil": "EV Coil",
+
+    "block.mekanismrepowered.transformer_casing": "Transformer Casing",
+    "block.mekanismrepowered.transformer_interface": "Transformer Interface",
+    "block.mekanismrepowered.transformer_io": "Transformer I/O",
+
+    "creativetab.mekanismrepowered_tab": "Mekanism: Repowered Tab"
+}

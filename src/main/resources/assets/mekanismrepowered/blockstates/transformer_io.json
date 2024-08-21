@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "mekanismrepowered:block/transformer_io"
+        }
+    }
+}
