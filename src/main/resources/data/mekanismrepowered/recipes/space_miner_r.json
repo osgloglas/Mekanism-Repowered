@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:unstable_alloy"
+    },
+    "b": {
+      "item": "mekanism:robit"
+    },
+    "c": {
+      "item": "mekanism:digital_miner"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:space_miner",
+    "count": 1
+  }
+}

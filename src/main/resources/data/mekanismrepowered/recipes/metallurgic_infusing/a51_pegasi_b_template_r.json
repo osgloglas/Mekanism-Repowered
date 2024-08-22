@@ -1,0 +1,14 @@
+{
+	"type":"mekanism:metallurgic_infusing",
+	"chemicalInput":{
+		"amount":90,"tag":"mekanism_repowered:nether_star_fuel"
+	},
+	"itemInput":{
+		"ingredient":{
+			"tag":"mekanismrepowered:blank_template"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:a51_pegasi_b_template"
+	}
+}

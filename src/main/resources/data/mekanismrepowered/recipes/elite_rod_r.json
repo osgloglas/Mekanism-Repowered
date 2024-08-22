@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "b": {
+      "item": "mekanismrepowered:advanced_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:elite_rod",
+    "count": 1
+  }
+}

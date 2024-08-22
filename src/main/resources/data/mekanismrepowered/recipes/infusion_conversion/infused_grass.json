@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "minecraft:grass_block"
+      }
+    },
+    "output": {
+      "amount": 90,
+      "infuse_type": "mekanismrepowered:infused_grass"
+    }
+  }

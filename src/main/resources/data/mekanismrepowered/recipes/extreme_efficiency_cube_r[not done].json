@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:compounded_block"
+    },
+    "b": {
+      "item": "mekanismrepowered:extreme_energy_cube"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:extreme_efficiency_cube",
+    "count": 1
+  }
+}

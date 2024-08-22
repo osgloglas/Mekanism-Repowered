@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:lv_coil"
+    },
+    "b": {
+      "item": "mekanismrepowered:basic_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:basic_voltage_rods",
+    "count": 1
+  }
+}

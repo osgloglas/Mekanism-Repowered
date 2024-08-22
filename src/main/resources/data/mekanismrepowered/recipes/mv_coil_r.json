@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:steel_spool"
+    },
+    "b": {
+      "item": "mekanismrepowered:advanced_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:mv_coil",
+    "count": 1
+  }
+}

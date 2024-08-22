@@ -1,0 +1,14 @@
+{
+	"type":"mekanism:metallurgic_infusing",
+	"chemicalInput":{
+		"amount":90,"tag":"mekanismrepowered:liquidated_brine"
+	},
+	"itemInput":{
+		"ingredient":{
+			"tag":"mekanismrepowered:blank_template"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:a55_cancri_e_template"
+	}
+}

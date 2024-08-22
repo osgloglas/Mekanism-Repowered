@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:unstable_alloy"
+    },
+    "b": {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:extreme_control_circuit",
+    "count": 1
+  }
+}

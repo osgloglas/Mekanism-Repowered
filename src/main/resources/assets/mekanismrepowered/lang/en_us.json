@@ -55,5 +55,26 @@
     "block.mekanismrepowered.extreme_voltage_rods": "Extreme Voltage Rods",
     "block.mekanismrepowered.space_miner": "Space Miner",
 
-    "creativetab.mekanismrepowered_tab": "Mekanism: Repowered"
+    "creativetab.mekanismrepowered_tab": "Mekanism: Repowered",
+
+    "infuse_type.mekanismrepowered.infused_refined_glowstone": "Infused Glowstone Compound",
+    "infuse_type.mekanismrepowered.pure_lava": "Pure Lava",
+    "infuse_type.mekanismrepowered.infused_stone": "Infused Stone",
+    "infuse_type.mekanismrepowered.infused_magma": "Infused Magma",
+    "infuse_type.mekanismrepowered.infused_milk": "Infused Milk",
+    "infuse_type.mekanismrepowered.terracotta_slurry": "Terracotta Slurry",
+    "infuse_type.mekanismrepowered.dense_osmium": "Dense Osmium",
+    "infuse_type.mekanismrepowered.liquidated_hydrogen": "Liquidated Hydrogen",
+    "infuse_type.mekanismrepowered.infused_ice": "Infused Ice",
+    "infuse_type.mekanismrepowered.infused_blue_ice": "Infused Blue Ice",
+    "infuse_type.mekanismrepowered.dense_netherite": "Dense Netherite",
+    "infuse_type.mekanismrepowered.loding_fluid": "Loding Fluid",
+    "infuse_type.mekanismrepowered.infused_grass": "Infused Grass",
+    "infuse_type.mekanismrepowered.liquidated_dirt": "Liquidated Dirt",
+    "infuse_type.mekanismrepowered.liquidated_sandstone": "Liquidated Sandstone",
+    "infuse_type.mekanismrepowered.nether_star_fuel": "Nether Star Fuel",
+    "infuse_type.mekanismrepowered.liquidated_brine": "Liquidated Brine",
+    "infuse_type.mekanismrepowered.pure_water": "Pure Water",
+    "infuse_type.mekanismrepowered.infused_infested_stone": "Infused Infested Stone",
+    "infuse_type.mekanismrepowered.dense_diamond": "Dense Diamond"
 }

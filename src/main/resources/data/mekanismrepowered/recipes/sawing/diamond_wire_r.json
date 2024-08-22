@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:sawing",
+	"input":{
+		"ingredient":{
+			"item":"mekanism:enriched_diamond"
+		}
+	},
+	"mainOutput":{
+		"count":4,
+		"item":"mekanismrepowered:diamond_wire"
+	}
+}

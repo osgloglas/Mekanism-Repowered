@@ -1,0 +1,14 @@
+{
+	"type":"mekanism:metallurgic_infusing",
+	"chemicalInput":{
+		"amount":40,"tag":"mekanism:refined_obsidian"
+	},
+	"itemInput":{
+		"ingredient":{
+			"tag":"mekanismrepowered:refined_glowstone_compound"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:compounded_ingot"
+	}
+}

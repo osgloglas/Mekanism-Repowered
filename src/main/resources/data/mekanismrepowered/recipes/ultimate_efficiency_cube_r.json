@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:refined_obsidian_block"
+    },
+    "b": {
+      "item": "mekanism:ultimate_energy_cube"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:ultimate_efficiency_cube",
+    "count": 1
+  }
+}

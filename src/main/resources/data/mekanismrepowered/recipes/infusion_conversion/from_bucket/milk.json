@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "minecraft:milk_bucket"
+      }
+    },
+    "output": {
+      "amount": 90,
+      "infuse_type": "mekanismrepowered:infused_milk"
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "minecraft:netherite_block"
+      }
+    },
+    "output": {
+      "amount": 90,
+      "infuse_type": "mekanismrepowered:dense_netherite"
+    }
+  }

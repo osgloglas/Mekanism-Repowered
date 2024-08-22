@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:transformer_casing"
+    },
+    "b": {
+      "item": "mekanism:basic_control_circuit"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:transformer_io",
+    "count": 1
+  }
+}

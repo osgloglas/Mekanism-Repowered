@@ -1,0 +1,14 @@
+{
+	"type":"mekanism:metallurgic_infusing",
+	"chemicalInput":{
+		"amount":90,"tag":"mekanismrepowered:dense_netherite"
+	},
+	"itemInput":{
+		"ingredient":{
+			"tag":"mekanismrepowered:blank_template"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:pluto_template"
+	}
+}

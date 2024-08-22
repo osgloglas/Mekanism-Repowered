@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:sawing",
+	"input":{
+		"ingredient":{
+			"item":"mekanism:ingot_refined_glowstone"
+		}
+	},
+	"mainOutput":{
+		"count":4,
+		"item":"mekanismrepowered:refined_glowstone_wire"
+	}
+}

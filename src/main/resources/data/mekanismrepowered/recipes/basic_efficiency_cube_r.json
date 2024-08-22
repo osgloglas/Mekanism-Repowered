@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_block"
+    },
+    "b": {
+      "item": "mekanism:basic_energy_cube"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:basic_efficiency_cube",
+    "count": 1
+  }
+}

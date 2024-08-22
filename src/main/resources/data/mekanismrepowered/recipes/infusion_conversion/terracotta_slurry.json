@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "minecraft:terracotta"
+      }
+    },
+    "output": {
+      "amount": 10,
+      "infuse_type": "mekanismrepowered:terracotta_slurry"
+    }
+  }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:copper_spool"
+    },
+    "b": {
+      "item": "mekanismrepowered:basic_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:lv_coil",
+    "count": 1
+  }
+}

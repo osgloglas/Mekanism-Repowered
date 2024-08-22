@@ -1,0 +1,16 @@
+{
+	"type":"mekanism:combining",
+	"extraInput":{
+		"ingredient":{
+			"tag":"mekanism:hdpe_pellet"
+		}
+	},
+	"mainInput":{
+		"ingredient":{
+			"item":"mekanismrepowered:dust_refined_glowstone"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:refined_glowstone_compound"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:sawing",
+	"input":{
+		"ingredient":{
+			"item":"mekanism:ingot_steel"
+		}
+	},
+	"mainOutput":{
+		"count":4,
+		"item":"mekanismrepowered:steel_wire"
+	}
+}

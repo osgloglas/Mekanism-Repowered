@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:ev_coil"
+    },
+    "b": {
+      "item": "mekanismrepowered:extreme_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:extreme_voltage_rods",
+    "count": 1
+  }
+}

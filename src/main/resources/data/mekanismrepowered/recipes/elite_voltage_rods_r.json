@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:hv_coil"
+    },
+    "b": {
+      "item": "mekanismrepowered:elite_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:elite_voltage_rods",
+    "count": 1
+  }
+}

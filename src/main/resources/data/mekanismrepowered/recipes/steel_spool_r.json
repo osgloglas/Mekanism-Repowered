@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:steel_wire"
+    },
+    "b": {
+      "item": "mekanism:ingot_steel"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:steel_spool",
+    "count": 1
+  }
+}

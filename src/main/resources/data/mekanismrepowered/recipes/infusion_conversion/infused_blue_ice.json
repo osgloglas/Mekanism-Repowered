@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    },
+    "output": {
+      "amount": 90,
+      "infuse_type": "mekanismrepowered:infused_blue_ice"
+    }
+  }

@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:sawing",
+	"input":{
+		"ingredient":{
+			"item":"mekanism_repowered:compounded_ingot"
+		}
+	},
+	"mainOutput":{
+		"count":4,
+		"item":"mekanismrepowered:refined_wire"
+	}
+}

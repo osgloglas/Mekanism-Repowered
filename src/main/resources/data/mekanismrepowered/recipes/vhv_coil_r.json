@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:glow_spool"
+    },
+    "b": {
+      "item": "mekanismrepowered:ultimate_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:vhv_coil",
+    "count": 1
+  }
+}

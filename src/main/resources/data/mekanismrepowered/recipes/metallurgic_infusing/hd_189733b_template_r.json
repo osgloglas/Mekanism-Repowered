@@ -1,0 +1,14 @@
+{
+	"type":"mekanism:metallurgic_infusing",
+	"chemicalInput":{
+		"amount":90,"tag":"mekanismrepowered:pure_water"
+	},
+	"itemInput":{
+		"ingredient":{
+			"tag":"mekanismrepowered:blank_template"
+		}
+	},
+	"output":{
+		"item":"mekanismrepowered:hd_189733b_template"
+	}
+}

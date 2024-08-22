@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:diamond_wire"
+    },
+    "b": {
+      "item": "mekanism:ingot_steel"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:diamond_spool",
+    "count": 1
+  }
+}

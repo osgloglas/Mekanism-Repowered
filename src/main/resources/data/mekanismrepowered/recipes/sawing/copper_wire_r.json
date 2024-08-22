@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:sawing",
+	"input":{
+		"ingredient":{
+			"item":"minecraft:copper_ingot"
+		}
+	},
+	"mainOutput":{
+		"count":4,
+		"item":"mekanismrepowered:copper_wire"
+	}
+}

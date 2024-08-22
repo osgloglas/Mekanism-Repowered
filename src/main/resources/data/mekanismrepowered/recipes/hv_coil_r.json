@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mekanismrepowered:diamond_spool"
+    },
+    "b": {
+      "item": "mekanismrepowered:elite_rod"
+    }
+  },
+  "result": {
+    "item": "mekanismrepowered:hv_coil",
+    "count": 1
+  }
+}
