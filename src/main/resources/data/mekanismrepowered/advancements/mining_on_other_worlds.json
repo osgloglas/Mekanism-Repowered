@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:space_miner"
+    },
+    "title": {
+      "translate": "advancements.mining_on_other_worlds.title"
+    },
+    "description": {
+      "translate": "advancements.mining_on_other_worlds.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mining_on_other_worlds": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "mekanismrepowered:space_miner"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mekanismrepowered:your_poor_friends"
+}

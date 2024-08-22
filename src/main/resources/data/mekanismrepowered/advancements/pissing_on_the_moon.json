@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:space_miner"
+    },
+    "title": {
+      "translate": "advancements.pissing_on_the_moon.title"
+    },
+    "description": {
+      "translate": "advancements.pissing_on_the_moon.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pissing_on_the_moon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "mekanismrepowered:your_poor_friends"
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:extreme_efficiency_cube"
+    },
+    "title": {
+      "translate": "advancements.unlimited_power.title"
+    },
+    "description": {
+      "translate": "advancements.unlimited_power.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unlimited_power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanismrepowered:extreme_efficiency_cube"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  },
+  "parent": "mekanismrepowered:more_3"
+}

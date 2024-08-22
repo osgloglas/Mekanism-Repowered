@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:compounded_ingot"
+    },
+    "title": {
+      "translate": "advancements.pound_me.title"
+    },
+    "description": {
+      "translate": "advancements.pound_me.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pound_me": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanismrepowered:compounded_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mekanismrepowered:zap"
+}

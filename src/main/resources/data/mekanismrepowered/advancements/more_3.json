@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:extreme_voltage_rods"
+    },
+    "title": {
+      "translate": "advancements.more_3.title"
+    },
+    "description": {
+      "translate": "advancements.more_3.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "more_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanismrepowered:extreme_voltage_rods"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  },
+  "parent": "mekanismrepowered:more_2"
+}

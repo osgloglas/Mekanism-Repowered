@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "mekanismrepowered:basic_voltage_rods"
+    },
+    "title": {
+      "translate": "advancements.power.title"
+    },
+    "description": {
+      "translate": "advancements.power.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanismrepowered:basic_voltage_rods"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mekanismrepowered:zap"
+}
