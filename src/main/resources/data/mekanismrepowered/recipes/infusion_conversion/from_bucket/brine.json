@@ -2,7 +2,7 @@
     "type": "mekanism:infusion_conversion",
     "input": {
       "ingredient": {
-        "item": "mekanism:elite_fluid_tank"
+        "item": "mekanism:brine_bucket"
       }
     },
     "output": {

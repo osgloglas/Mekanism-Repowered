@@ -2,7 +2,7 @@
 	"type":"mekanism:metallurgic_infusing",
 	"chemicalInput":{
 		"amount":90,
-		"infuse_type":"mekanism_repowered:liquidated_sandstone"
+		"infuse_type":"mekanismrepowered:liquidated_sandstone"
 	},
 	"itemInput":{
 		"ingredient":{
