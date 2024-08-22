@@ -54,6 +54,13 @@
     "block.mekanismrepowered.ultimate_voltage_rods": "Ultimate Voltage Rods",
     "block.mekanismrepowered.extreme_voltage_rods": "Extreme Voltage Rods",
     "block.mekanismrepowered.space_miner": "Space Miner",
+    "block.mekanismrepowered.basic_efficiency_cube": "Basic Efficiency Cube",
+    "block.mekanismrepowered.advanced_efficiency_cube": "Advanced Efficiency Cube",
+    "block.mekanismrepowered.elite_efficiency_cube": "Elite Efficiency Cube",
+    "block.mekanismrepowered.ultimate_efficiency_cube": "Ultimate Efficiency Cube",
+    "block.mekanismrepowered.extreme_efficiency_cube": "Extreme Efficiency Cube",
+    "block.mekanismrepowered.refined_obsidian_block": "Refined Obsidian Block",
+    "block.mekanismrepowered.compounded_block": "Compounded Block",
 
     "creativetab.mekanismrepowered_tab": "Mekanism: Repowered",
 

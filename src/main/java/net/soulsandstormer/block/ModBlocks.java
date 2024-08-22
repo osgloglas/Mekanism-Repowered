@@ -51,6 +51,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPACE_MINER = registerBlock("space_miner", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    //efficiency cubes
+    public static final RegistryObject<Block> BASIC_EFFICIENCY_CUBE = registerBlock("basic_efficiency_cube", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    
+    public static final RegistryObject<Block> ADVANCED_EFFICIENCY_CUBE = registerBlock("advanced_efficiency_cube", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ELITE_EFFICIENCY_CUBE = registerBlock("elite_efficiency_cube", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    
+    public static final RegistryObject<Block> ULTIMATE_EFFICIENCY_CUBE = registerBlock("ultimate_efficiency_cube", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> EXTREME_EFFICIENCY_CUBE = registerBlock("extreme_efficiency_cube", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    //components
+    public static final RegistryObject<Block> REFINED_OBSIDIAN_BLOCK = registerBlock("refined_obsidian_block", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> COMPOUNDED_BLOCK = registerBlock("compounded_block", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        
+    //helper method
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -8,6 +8,13 @@
         "mekanismrepowered:elite_voltage_rods",
         "mekanismrepowered:ultimate_voltage_rods",
         "mekanismrepowered:extreme_voltage_rods",
-        "mekanismrepowered:space_miner"
+        "mekanismrepowered:space_miner",
+        "mekanismrepowered:basic_efficiency_cube",
+        "mekanismrepowered:advanced_efficiency_cube",
+        "mekanismrepowered:elite_efficiency_cube",
+        "mekanismrepowered:ultimate_efficiency_cube",
+        "mekanismrepowered:extreme_efficiency_cube",
+        "mekanismrepowered:refined_obsidian_block",
+        "mekanismrepowered:compounded_block"
     ]
 }

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "mekanismrepowered:block/compounded_block_side",
+        "up": "mekanismrepowered:block/refined_obsidian_block",
+        "down": "mekanismrepowered:block/compounded_block_bottom"
+    }
+}

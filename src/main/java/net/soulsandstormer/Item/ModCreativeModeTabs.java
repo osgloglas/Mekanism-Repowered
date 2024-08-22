@@ -74,6 +74,13 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModBlocks.ULTIMATE_VOLTAGE_RODS.get());
             pOutput.accept(ModBlocks.EXTREME_VOLTAGE_RODS.get());
             pOutput.accept(ModBlocks.SPACE_MINER.get());
+            pOutput.accept(ModBlocks.BASIC_EFFICIENCY_CUBE.get());
+            pOutput.accept(ModBlocks.ADVANCED_EFFICIENCY_CUBE.get());
+            pOutput.accept(ModBlocks.ELITE_EFFICIENCY_CUBE.get());
+            pOutput.accept(ModBlocks.ULTIMATE_EFFICIENCY_CUBE.get());
+            pOutput.accept(ModBlocks.EXTREME_EFFICIENCY_CUBE.get());
+            pOutput.accept(ModBlocks.REFINED_OBSIDIAN_BLOCK.get());
+            pOutput.accept(ModBlocks.COMPOUNDED_BLOCK.get());
         })
         .build());
 
