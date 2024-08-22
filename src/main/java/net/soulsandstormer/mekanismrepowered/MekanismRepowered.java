@@ -1,6 +1,8 @@
 package net.soulsandstormer.mekanismrepowered;
 
 import com.mojang.logging.LogUtils;
+
+import mekanism.api.chemical.infuse.InfuseTypeBuilder;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -30,6 +32,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.soulsandstormer.Item.ModCreativeModeTabs;
 import net.soulsandstormer.Item.ModItems;
 import net.soulsandstormer.block.ModBlocks;
+import net.soulsandstormer.infusetypes.ModInfuseTypes;
 
 import org.slf4j.Logger;
 
@@ -50,6 +53,7 @@ public class MekanismRepowered
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModInfuseTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:infusion_conversion",
+    "input": {
+      "ingredient": {
+        "item": "mekanismrepowered:refined_glowstone_compound"
+      }
+    },
+    "output": {
+      "amount": 10,
+      "infuse_type": "mekanismrepowered:infused_glowstone_compound"
+    }
+  }

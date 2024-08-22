@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "chemicalInput": {
+    "amount": 10,
+    "infuse_type": "mekanismrepowered:infused_glowstone_compound"
+  },
+  "itemInput": {
+    "ingredient": {
+      "item": "mekanism:alloy_atomic"
+    }
+  },
+  "output": {
+    "item": "mekanismrepowered:unstable_alloy"
+  }
+}
