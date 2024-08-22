@@ -1,11 +1,12 @@
 {
 	"type":"mekanism:metallurgic_infusing",
 	"chemicalInput":{
-		"amount":90,"tag":"mekanismrepowered:infused_stone"
+		"amount":90,
+		"infuse_type":"mekanismrepowered:infused_stone"
 	},
 	"itemInput":{
 		"ingredient":{
-			"tag":"mekanismrepowered:blank_template"
+			"item":"mekanismrepowered:blank_template"
 		}
 	},
 	"output":{

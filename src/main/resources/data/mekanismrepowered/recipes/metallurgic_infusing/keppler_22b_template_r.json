@@ -1,11 +1,12 @@
 {
 	"type":"mekanism:metallurgic_infusing",
 	"chemicalInput":{
-		"amount":90,"tag":"mekanismrepowered:dense_diamond"
+		"amount":90,
+		"infuse_type":"mekanismrepowered:dense_diamond"
 	},
 	"itemInput":{
 		"ingredient":{
-			"tag":"mekanismrepowered:blank_template"
+			"item":"mekanismrepowered:blank_template"
 		}
 	},
 	"output":{

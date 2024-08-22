@@ -1,11 +1,12 @@
 {
 	"type":"mekanism:metallurgic_infusing",
 	"chemicalInput":{
-		"amount":90,"tag":"mekanismrepowered:liquidated_hydrogen"
+		"amount":90,
+		"infuse_type":"mekanismrepowered:dense_osmium"
 	},
 	"itemInput":{
 		"ingredient":{
-			"tag":"mekanismrepowered:blank_template"
+			"item":"mekanismrepowered:blank_template"
 		}
 	},
 	"output":{
