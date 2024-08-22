@@ -11,7 +11,7 @@
       "item": "minecraft:copper_block"
     },
     "b": {
-      "item": "mekanism:basic_energy_cube"
+      "item": "mekanism:basic_control_circuit"
     }
   },
   "result": {

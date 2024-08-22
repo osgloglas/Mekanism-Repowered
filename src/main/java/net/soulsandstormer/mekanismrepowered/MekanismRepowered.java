@@ -80,15 +80,13 @@ public class MekanismRepowered
 }
 
 /*TODO
- * make extreme energy cube
- * 
  * implement space miner
  * 
  * add drones fully
  * 
  * test all recipes (with JEI or another way)
  * 
- * add achievements
+ * add advancements
  * 
  * add items from space miner
  * 
