@@ -121,6 +121,8 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven { url 'https://modmaven.dev/' }
 }
 
 dependencies {
@@ -145,6 +147,11 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    compileOnly "mekanism:Mekanism:${mekanism_version}:api"
+
+    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")// core
+    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:generators")// Mekanism: Generators
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
