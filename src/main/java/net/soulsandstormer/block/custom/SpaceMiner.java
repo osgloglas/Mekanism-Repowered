@@ -3,19 +3,30 @@ package net.soulsandstormer.block.custom;
 import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
+import net.soulsandstormer.block.custom.entity.ModBlockEntities;
+import net.soulsandstormer.block.custom.entity.SpaceMinerEntity;
 
-public class SpaceMiner extends BaseEntityBlock{
+public class SpaceMiner extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 32, 32, 30); //come back to this for bounds
 
-    protected SpaceMiner(Properties pProperties) {
+    public SpaceMiner(Properties pProperties) {
         super(pProperties);
         //TODO Auto-generated constructor stub
     }
@@ -30,11 +41,46 @@ public class SpaceMiner extends BaseEntityBlock{
         return RenderShape.MODEL;
     }
 
+    @Override
+    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+        if (pState.getBlock() != pNewState.getBlock()) {
+            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+            if (blockEntity instanceof SpaceMinerEntity) {
+                ((SpaceMinerEntity) blockEntity).drops();
+            }
+        }
+
+        super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+    }
+
+    @Override
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (!pLevel.isClientSide()) {
+            BlockEntity entity = pLevel.getBlockEntity(pPos);
+            if (entity instanceof SpaceMinerEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (SpaceMinerEntity)entity, pPos);
+            } else {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
+        }
+
+        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
+    }
+
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'newBlockEntity'");
+        return new SpaceMinerEntity(pPos, pState);
     }
-    
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        if (pLevel.isClientSide()) {
+            return null;
+        }
+
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.SPACE_MINER_BE.get(),
+            (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
+    }
 }

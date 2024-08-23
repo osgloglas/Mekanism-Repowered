@@ -151,6 +151,10 @@ public class ModItems {
     public static final RegistryObject<Item> K_22B_TEMPLATE = ITEMS.register("k_22b_template",
         () -> new Item(new Item.Properties()));
 
+    //space miner outputs
+    public static final RegistryObject<Item> BALL_OF_FIRE = ITEMS.register("ball_of_fire",
+        () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

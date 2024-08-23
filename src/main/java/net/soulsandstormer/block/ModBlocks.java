@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.block.custom.SpaceMiner;
 import net.soulsandstormer.block.custom.TransformerInterface;
 import net.soulsandstormer.mekanismrepowered.MekanismRepowered;
 
@@ -49,7 +50,7 @@ public class ModBlocks {
 
     //space miner (will need custom class)
     public static final RegistryObject<Block> SPACE_MINER = registerBlock("space_miner", 
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+        () -> new SpaceMiner(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     //efficiency cubes
     public static final RegistryObject<Block> BASIC_EFFICIENCY_CUBE = registerBlock("basic_efficiency_cube", 

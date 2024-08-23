@@ -2,6 +2,7 @@ package net.soulsandstormer.mekanismrepowered;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,7 +16,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.soulsandstormer.Item.ModCreativeModeTabs;
 import net.soulsandstormer.Item.ModItems;
 import net.soulsandstormer.block.ModBlocks;
+import net.soulsandstormer.block.custom.entity.ModBlockEntities;
 import net.soulsandstormer.infusetypes.ModInfuseTypes;
+import net.soulsandstormer.screen.ModMenuTypes;
+import net.soulsandstormer.screen.SpaceMinerScreen;
 
 import org.slf4j.Logger;
 
@@ -37,6 +41,9 @@ public class MekanismRepowered
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModInfuseTypes.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -74,7 +81,10 @@ public class MekanismRepowered
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-        
+            //entity renderer
+
+            //screens
+            MenuScreens.register(ModMenuTypes.SPACE_MINER_MENU.get(), SpaceMinerScreen::new);
         }
     }
 }
