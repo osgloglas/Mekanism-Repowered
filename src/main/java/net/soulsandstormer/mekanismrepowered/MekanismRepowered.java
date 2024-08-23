@@ -18,6 +18,7 @@ import net.soulsandstormer.Item.ModItems;
 import net.soulsandstormer.block.ModBlocks;
 import net.soulsandstormer.block.entity.ModBlockEntities;
 import net.soulsandstormer.infusetypes.ModInfuseTypes;
+import net.soulsandstormer.recipe.ModRecipes;
 import net.soulsandstormer.screen.ModMenuTypes;
 import net.soulsandstormer.screen.SpaceMinerScreen;
 
@@ -44,6 +45,8 @@ public class MekanismRepowered
         ModBlockEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -91,6 +94,7 @@ public class MekanismRepowered
 
 /*TODO
  * implement space miner
+ * add JEI compatability too
  * 
  * add drones fully
  * 

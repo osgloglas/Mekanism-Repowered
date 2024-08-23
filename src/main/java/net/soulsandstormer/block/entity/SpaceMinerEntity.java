@@ -24,8 +24,10 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.recipe.SpaceMinerRecipe;
 import net.soulsandstormer.screen.SpaceMinerMenu;
+
+import java.util.Optional;
 
 public class SpaceMinerEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(2);
@@ -142,7 +144,9 @@ public class SpaceMinerEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.BALL_OF_FIRE.get(), 1);
+        Optional<SpaceMinerRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
@@ -150,10 +154,23 @@ public class SpaceMinerEntity extends BlockEntity implements MenuProvider {
     }
     
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.SUN_TEMPLATE.get();
-        ItemStack result = new ItemStack(ModItems.BALL_OF_FIRE.get());
+        Optional<SpaceMinerRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<SpaceMinerRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for (int i=0; i<itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(SpaceMinerRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

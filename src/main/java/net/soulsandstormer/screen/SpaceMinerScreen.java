@@ -24,7 +24,7 @@ public class SpaceMinerScreen extends AbstractContainerScreen<SpaceMinerMenu> {
 
         //this moves the titles around for block and inventory
         this.inventoryLabelY = 10000;
-        this.titleLabelY = 10000;
+        this.titleLabelX = 50;
     }
 
     @Override

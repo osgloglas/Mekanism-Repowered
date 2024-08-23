@@ -1,0 +1,12 @@
+{
+    "type": "mekanismrepowered:space_mining",
+    "ingredients": [
+        {
+            "item": "mekanismrepowered:sun_template"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "mekanismrepowered:ball_of_fire"
+    }
+}

@@ -24,7 +24,7 @@ import net.soulsandstormer.block.entity.ModBlockEntities;
 import net.soulsandstormer.block.entity.SpaceMinerEntity;
 
 public class SpaceMiner extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 32, 32, 30); //come back to this for bounds
+    public static final VoxelShape SHAPE = Block.box(-32, -32, 0, 32, 32, 30); //come back to this for bounds
 
     public SpaceMiner(Properties pProperties) {
         super(pProperties);
