@@ -20,8 +20,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
-import net.soulsandstormer.block.custom.entity.ModBlockEntities;
-import net.soulsandstormer.block.custom.entity.SpaceMinerEntity;
+import net.soulsandstormer.block.entity.ModBlockEntities;
+import net.soulsandstormer.block.entity.SpaceMinerEntity;
 
 public class SpaceMiner extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 32, 32, 30); //come back to this for bounds

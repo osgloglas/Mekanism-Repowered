@@ -1,4 +1,4 @@
-package net.soulsandstormer.block.custom.entity;
+package net.soulsandstormer.block.entity;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

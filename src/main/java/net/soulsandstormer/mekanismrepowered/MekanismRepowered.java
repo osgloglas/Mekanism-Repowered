@@ -16,7 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.soulsandstormer.Item.ModCreativeModeTabs;
 import net.soulsandstormer.Item.ModItems;
 import net.soulsandstormer.block.ModBlocks;
-import net.soulsandstormer.block.custom.entity.ModBlockEntities;
+import net.soulsandstormer.block.entity.ModBlockEntities;
 import net.soulsandstormer.infusetypes.ModInfuseTypes;
 import net.soulsandstormer.screen.ModMenuTypes;
 import net.soulsandstormer.screen.SpaceMinerScreen;

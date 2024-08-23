@@ -1,4 +1,4 @@
-package net.soulsandstormer.block.custom.entity;
+package net.soulsandstormer.block.entity;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;

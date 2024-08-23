@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 import net.soulsandstormer.block.ModBlocks;
-import net.soulsandstormer.block.custom.entity.SpaceMinerEntity;
+import net.soulsandstormer.block.entity.SpaceMinerEntity;
 
 public class SpaceMinerMenu extends AbstractContainerMenu {
     public final SpaceMinerEntity blockEntity;
