@@ -18,13 +18,32 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import net.soulsandstormer.block.entity.ModBlockEntities;
 import net.soulsandstormer.block.entity.SpaceMinerEntity;
 
 public class SpaceMiner extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(-32, -32, 0, 32, 32, 30); //come back to this for bounds
+    public static final VoxelShape SHAPE_BODY1 = Block.box(-8, 2, -8, 24, 11, 24); //come back to this for bounds
+    public static final VoxelShape SHAPE_BODY2 = Block.box(-6, 11, -6, 22, 13, 22);
+    public static final VoxelShape SHAPE_BODY3 = Block.box(-8, 13, -8, 24, 18, 24);
+    public static final VoxelShape SHAPE_LEG_A1 = Block.box(-11, 13, -7, -8, 17, 0);
+    public static final VoxelShape SHAPE_LEG_A2 = Block.box(-11, 13, 15, -8, 17, 22);
+    public static final VoxelShape SHAPE_LEG_A3 = Block.box(24, 13, -7, 27, 17, 0);
+    public static final VoxelShape SHAPE_LEG_A4 = Block.box(24, 13, 15, 27, 17, 22);
+    public static final VoxelShape SHAPE_LEG1 = Block.box(-13, 1, -6, -11, 18, -1);
+    public static final VoxelShape SHAPE_LEG2 = Block.box(-13, 1, 16, -11, 18, 21);
+    public static final VoxelShape SHAPE_LEG3 = Block.box(27, 1, -6, 29, 18, -1);
+    public static final VoxelShape SHAPE_LEG4 = Block.box(27, 1, 16, 29, 18, 21);
+    public static final VoxelShape SHAPE_LEG_F1 = Block.box(-14, 0, -7, -10, 1, 0);
+    public static final VoxelShape SHAPE_LEG_F2 = Block.box(-14, 0, 15, -10, 1, 22);
+    public static final VoxelShape SHAPE_LEG_F3 = Block.box(26, 0, -7, 30, 1, 0);
+    public static final VoxelShape SHAPE_LEG_F4 = Block.box(26, 0, 15, 30, 1, 22);
+    public static final VoxelShape SHAPE_ANTENNA1 = Block.box(0, 18, 15, 3, 23, 18);
+    public static final VoxelShape SHAPE_ANTENNA2 = Block.box(8, 18, 13, 10, 22, 15);
+    public static final VoxelShape SHAPE_PIPE = Block.box(6, 6, 24, 10, 10, 31);
+    public static final VoxelShape SHAPE_PORT = Block.box(5, 5, 31, 11, 11, 32);
 
     public SpaceMiner(Properties pProperties) {
         super(pProperties);
@@ -33,7 +52,9 @@ public class SpaceMiner extends BaseEntityBlock {
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE;
+        return Shapes.or(SHAPE_BODY1, SHAPE_BODY2, SHAPE_BODY3,
+            SHAPE_LEG_A1, SHAPE_LEG_A2, SHAPE_LEG_A3, SHAPE_LEG_A4, SHAPE_LEG1, SHAPE_LEG2, SHAPE_LEG3, SHAPE_LEG4, SHAPE_LEG_F1, SHAPE_LEG_F2, SHAPE_LEG_F3, SHAPE_LEG_F4,
+            SHAPE_ANTENNA1, SHAPE_ANTENNA2, SHAPE_PIPE, SHAPE_PORT);
     }
 
     @Override

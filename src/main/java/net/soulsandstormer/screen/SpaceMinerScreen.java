@@ -24,7 +24,8 @@ public class SpaceMinerScreen extends AbstractContainerScreen<SpaceMinerMenu> {
 
         //this moves the titles around for block and inventory
         this.inventoryLabelY = 10000;
-        this.titleLabelX = 50;
+        this.titleLabelX = 60;
+        this.titleLabelY = 50;
     }
 
     @Override
@@ -42,7 +43,7 @@ public class SpaceMinerScreen extends AbstractContainerScreen<SpaceMinerMenu> {
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(TEXTURE, x + 85, y + 30, 176, 0, 8, menu.getScaledProgress()); //to make left to right, swap width with scaled progress
+            guiGraphics.blit(TEXTURE, x + 47, y + 10, 0, 166, menu.getScaledProgress(), 39); //to make left to right, swap width with scaled progress **also fix the dot? possibly the offset coord
         }
     }
 

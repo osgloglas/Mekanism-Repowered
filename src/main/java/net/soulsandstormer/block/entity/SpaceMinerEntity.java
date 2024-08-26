@@ -39,7 +39,7 @@ public class SpaceMinerEntity extends BlockEntity implements MenuProvider {
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 100;
+    private int maxProgress = 10000;
 
 
     public SpaceMinerEntity(BlockPos pPos, BlockState pBlockState) {
