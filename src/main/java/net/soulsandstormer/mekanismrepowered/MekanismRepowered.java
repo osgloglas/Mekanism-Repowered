@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.soulsandstormer.Item.ModCreativeModeTabs;
 import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.Item.effects.OnFireEffect;
 import net.soulsandstormer.block.ModBlocks;
 import net.soulsandstormer.block.entity.ModBlockEntities;
 import net.soulsandstormer.infusetypes.ModInfuseTypes;
@@ -52,6 +53,9 @@ public class MekanismRepowered
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        //this will be effects for space miner items
+        MinecraftForge.EVENT_BUS.register(OnFireEffect.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
