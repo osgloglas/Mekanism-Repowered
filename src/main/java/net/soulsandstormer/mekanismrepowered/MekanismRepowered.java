@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.soulsandstormer.Item.ModCreativeModeTabs;
 import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.Item.effects.GravityEffect;
 import net.soulsandstormer.Item.effects.OnFireEffect;
 import net.soulsandstormer.block.ModBlocks;
 import net.soulsandstormer.block.entity.ModBlockEntities;
@@ -56,6 +57,7 @@ public class MekanismRepowered
 
         //this will be effects for space miner items
         MinecraftForge.EVENT_BUS.register(OnFireEffect.class);
+        MinecraftForge.EVENT_BUS.register(GravityEffect.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

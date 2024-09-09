@@ -66,6 +66,7 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.K_22B_TEMPLATE.get());
 
             pOutput.accept(ModItems.BALL_OF_FIRE.get());
+            pOutput.accept(ModItems.HEAVY_HELIUM.get());
 
             pOutput.accept(ModBlocks.TRANSFORMER_CASING.get());
             pOutput.accept(ModBlocks.TRANSFORMER_INTERFACE.get());

@@ -1,39 +1,23 @@
 package net.soulsandstormer.Item.effects;
 
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.soulsandstormer.Item.ModItems;
+import net.soulsandstormer.damage_type.ModDamageSources;
 
 public class OnFireEffect {
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent event) {
         Player player = event.player;
-
-        // Replace with your custom item or use an existing item.
         ItemStack itemToCheck = new ItemStack(ModItems.BALL_OF_FIRE.get());
 
         if (isItemInInventory(player, itemToCheck)) {
-            player.setSecondsOnFire(5); // Sets the player on fire for 5 seconds
-        }
-    }
-
-    @SubscribeEvent
-    public static void onLivingDeath(LivingDeathEvent event) {
-        if (event.getEntity() instanceof Player player) {
-            ItemStack itemToCheck = new ItemStack(ModItems.BALL_OF_FIRE.get());
-
-            if (isItemInInventory(player, itemToCheck)) {
-                // Create the custom death message
-                Component customDeathMessage = Component.literal(player.getName().getString() + " could not handle the power of the sun ");
-                
-                // Set the custom death message
-                event.setCanceled(true);
-                player.level().getServer().getPlayerList().broadcastSystemMessage(customDeathMessage, false);
-            }
+            player.setSecondsOnFire(1); // Sets the player on fire for 5 seconds
+            DamageSource sunfire = new ModDamageSources(event.player.level().registryAccess()).sunfire();
+            event.player.hurt(sunfire, 2f);
         }
     }
 

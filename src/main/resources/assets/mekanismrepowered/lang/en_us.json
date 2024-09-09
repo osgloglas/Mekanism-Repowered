@@ -45,6 +45,7 @@
     "item.mekanismrepowered.ross_128b_template": "Ross 128b Template",
     "item.mekanismrepowered.k_22b_template": "Keppler 22b Template",
     "item.mekanismrepowered.ball_of_fire": "Ball of Fire",
+    "item.mekanismrepowered.heavy_helium": "Heavy Helium",
 
     "block.mekanismrepowered.transformer_casing": "Transformer Casing",
     "block.mekanismrepowered.transformer_interface": "Transformer Interface",
@@ -107,5 +108,9 @@
     "advancements.pissing_on_the_moon.title": "Pissing on the moon [not finished]",
     "advancements.pissing_on_the_moon.descr": "Use the space miner and acquire an item",
     "advancements.pound_me.title": "Pound me",
-    "advancements.pound_me.descr": "Create a compound ingot"
+    "advancements.pound_me.descr": "Create a compound ingot",
+
+    "death.attack.sunfire": "%1$s couldn\u0027t handle the power of the sun",
+    "death.attack.sunfire.player": "%1$s couldn\u0027t handle the power of the sun whilst trying to escape %2$s",
+    "death.attack.gravitydamage": "%1$s had too much helium in their inventory"
 }

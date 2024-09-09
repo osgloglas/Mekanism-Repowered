@@ -1,0 +1,12 @@
+{
+    "type": "mekanismrepowered:space_mining",
+    "ingredients": [
+        {
+            "item": "mekanismrepowered:jupiter_template"
+        }
+    ],
+    "output": {
+        "count": 1,
+        "item": "mekanismrepowered:heavy_helium"
+    }
+}

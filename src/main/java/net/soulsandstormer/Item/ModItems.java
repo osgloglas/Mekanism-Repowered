@@ -1,6 +1,7 @@
 package net.soulsandstormer.Item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -153,7 +154,10 @@ public class ModItems {
 
     //space miner outputs
     public static final RegistryObject<Item> BALL_OF_FIRE = ITEMS.register("ball_of_fire",
-        () -> new Item(new Item.Properties()));
+        () -> new Item(new Item.Properties().fireResistant().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> HEAVY_HELIUM = ITEMS.register("heavy_helium",
+        () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
 
     public static void register(IEventBus eventBus) {
